@@ -1,0 +1,56 @@
+<div class="container">
+    <form name="setupForm" class="product-application-setup-form" novalidate form-submit="">
+        <div class="col-sm-6 pad-top-4" ng-repeat="product in accountConfiguration.products">
+            <div class="panel">
+                <div class="pad-2 border-heading">
+                    <h3> {{ product.name }} </h3>
+                </div>
+                <div class="pad-left-4 pad-right-4">
+                    <div class="row pad-top-2 pad-bot-1 border-row">
+                        <div class="col-sm-1 u-no-padding align-middle"><i
+                                class="icon icon-customer icon&#45;&#45;jumbo"
+                                data-test-id="product-applicant-name">
+                        </i></div>
+                        <div class="col-sm-8 u-no-padding h5">Customers</div>
+                        <div class="col-sm-3 u-no-padding h5"><span class="pull-right u-no-padding">Edit</span></div>
+                    </div>
+                </div>
+
+                <div class="pad-left-4 pad-right-4"
+                     ng-repeat="applicant in accountConfiguration.applicantsCombos">
+                    <div class="row pad-top-2 pad-bot-2 border-row">
+                        <div class="col-sm-8 u-no-padding">
+                            <span class="h6">{{applicant.fullName}}</span><br/>{{applicant.accountRelationship}}
+                        </div>
+                        <div class="col-sm-4 u-no-padding">
+                            <i class="icon icon-credit-card icon&#45;&#45;jumbo pull-right u-no-padding"
+                               data-test-id="product-applicant-name"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pad-left-4 pad-right-4">
+                    <div class="row pad-top-2 pad-bot-2 u-no-padding">
+                        <div class="col-sm-6 u-no-padding"><h5>Benefits Applied</h5></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pad-top-4 col-sm-12 u-no-padding">
+            <div class="col-xs-6 pad-left-4">
+                <button data-test-id="cancel-button" class="btn btn-default"
+                        ng-click="accountConfiguration.back()">{{ core.txtButton.BACK }}
+                </button>
+            </div>
+            <div class="col-xs-6 u-no-padding">
+                <button data-test-id="next-button" class="btn btn-primary pull-right"
+                        ng-click="accountConfiguration.submitProductApplication()">
+                    <span ng-if="!accountConfiguration.accountSubmitFailed">{{ core.txtButton.SUBMIT }}</span>
+                    <span ng-if="accountConfiguration.accountSubmitFailed">{{ core.txtButton.RETRY }}</span>
+                </button>
+
+            </div>
+        </div>
+    </form>
+</div>

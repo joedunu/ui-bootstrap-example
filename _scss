@@ -1,0 +1,101 @@
+.product-application-setup-form {
+  .table {
+    .configuration-td-text {
+      line-height: 43px;
+      min-height: 47px;
+    }
+
+    .configuration-td-card-text {
+      line-height: 22px;
+      min-height: 47px;
+    }
+
+    .configuration-td-multiline {
+      line-height: 1.4em;
+      padding-top: 10px;
+    }
+
+    .crn-designated-text {
+      display: block;
+      line-height: 22px
+    }
+
+    .reselect-crns-actions {
+      line-height: 45px;
+    }
+
+    .reselect-crns-actions .btn-more-menu {
+      box-shadow: none;
+      color: #007dba;
+      background-color: transparent;
+      padding: 5px 0 5px 10px;
+    }
+  }
+}
+.icon-more-elipses {
+  color: $light-ocean-blue;
+}
+.flyout-menu__item > a {
+  color: $light-ocean-blue;
+}
+
+.card-img-small {
+  height: 47px;
+}
+
+.prod-app-alert {
+  margin-top: 0;
+}
+
+.email-print-toggle {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+}
+
+.service-recommendation-wrapper {
+  .card__footer {
+    a {
+      font-size: 14px;
+      .icon {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.offers-modal-container {
+  background-color: #EEEDED;
+  border-radius: 6px;
+}
+
+.select-list-container {
+  .select-group-list-item {
+    display: table;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    .select-group-list-subitem {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .subitem-text {
+      padding: 5px 30px 5px 10px;
+    }
+    .subitem-icon {
+      text-align: center;
+      width: 35px;
+    }
+  }
+}
+
+.border-heading {
+  border-bottom: 2px solid lightgrey;
+}
+
+.border-row {
+  border-bottom: 1px solid lightgrey;
+}
